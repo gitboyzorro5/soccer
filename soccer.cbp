@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Division.h" />
+		<Unit filename="include/Team.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

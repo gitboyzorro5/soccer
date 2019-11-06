@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1514140574 source:c:\users\leonard.000\documents\soccer\main.cpp
+	<iostream>
+
+1573040894 source:c:\users\leonard.000\documents\soccer\team.cpp
+	<iostream>
+	"include/Team.h"
+
+1573034469 c:\users\leonard.000\documents\soccer\include\team.h
+	<string>
+	<vector>
+

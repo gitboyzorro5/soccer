@@ -5,9 +5,15 @@
 
 class Division
 {
+  
+public:
+	Division();
+
+private:
     std::string name;
     std::string country;
-    int total_matches;
+    unsigned int total_matches;
+    unsigned int total_teams;
 
 };
 

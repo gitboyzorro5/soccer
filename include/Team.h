@@ -7,19 +7,24 @@ class Team
 {
 
 public:
-	Team();
-	void print_players(std::vector<std::string>);
-	void add_player(std::vector<std::string>,std::string);
-
+	Team(unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int);
+	void setGoals(unsigned int,unsigned int,unsigned int,unsigned int);
+	void printPlayers(std::vector<std::string>) const;
+	void addPlayer(std::vector<std::string>,std::string);
+	void removePlayer(std::vector<std::string>,std::string);
+	void printTotalPoints();
 
 private:
 	std::string name;
-	int matches_played;
-	int full_time_home_goals;
-	int full_time_away_goals;
-	int full_time_home_concede;
-	int full_time_away_concede;
+	unsigned int matches_played;
+	unsigned int full_time_home_goals;
+	unsigned int full_time_away_goals;
+	unsigned int full_time_home_concede;
+	unsigned int full_time_away_concede;
+	unsigned int total_wins;
+	unsigned int total_points;
 	std::vector<std::string> players;
+	unsigned int getTotalPoints(unsigned int);//private utility function
 
 };
 

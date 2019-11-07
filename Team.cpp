@@ -1,17 +1,20 @@
 #include <iostream>
 #include <algorithm>
+#include <string>
 #include "include/Team.h"
 
-Team::Team(unsigned int fthg,unsigned int ftag,unsigned int fthc ,unsigned int ftac,unsigned int mp,unsigned int tw,unsigned int tp)
+Team::Team(unsigned int fthg,unsigned int ftag,unsigned int fthc,unsigned int ftac,unsigned int mp,unsigned int tw,unsigned int tp)
 {
 
-	fthg = 0;
-    ftag = 0;
-    fthc = 0;
-    ftac = 0;
-    mp   = 0;
-    tw   = 0;
-    tp   = 0;
+	fthg = ftag = fthc = ftac = mp = tw  = tp = 0;
+
+	full_time_home_goals = fthg;
+	full_time_away_goals = ftag;
+	full_time_home_concede = fthc;
+	full_time_away_concede = ftac;
+	matches_played = mp;
+	total_wins = tw;
+	total_points = tp;
    
 }
 

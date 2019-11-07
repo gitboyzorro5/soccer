@@ -12,3 +12,17 @@
 	<string>
 	<vector>
 
+1573144655 source:f:\soccer\main.cpp
+	<iostream>
+	"include/Team.h"
+
+1573144655 f:\soccer\include\team.h
+	<string>
+	<vector>
+
+1573145398 source:f:\soccer\team.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	"include/Team.h"
+

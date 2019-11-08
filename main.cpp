@@ -14,9 +14,11 @@ int main()
     ManUnited.addPlayer(ManUnitedPlayers,"Luke Shaw");
     ManUnited.addPlayer(ManUnitedPlayers,"Victor Lindeloff");
     ManUnited.addPlayer(ManUnitedPlayers,"Harry Mcguire");
-    ManUnited.printPlayers(ManUnitedPlayers);
 
-    ManUnited.removePlayer(ManUnitedPlayers,"Luke Shaw");
-    ManUnited.printPlayers(ManUnitedPlayers);
+    ManUnited.setGoals(10,5,5,12);
+    ManUnited.printGoals();
+    ManUnited.setTotalWins(5);
+    ManUnited.printTotalPoints()
+;
     return 0;
 }

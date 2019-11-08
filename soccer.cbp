@@ -33,6 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Team.cpp" />
+		<Unit filename="include/Division.h" />
 		<Unit filename="include/Team.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

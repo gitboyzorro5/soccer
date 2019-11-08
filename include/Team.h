@@ -13,11 +13,11 @@ public:
 	void setMatchesPlayed(unsigned int);
 	void setTotalWins(unsigned int);
 	void setTotalPoints(unsigned int);
-	std::string getName();
-	unsigned int getMatchesPlayed();
-	unsigned int getTotalWins();
+	std::string getName() const;
+	unsigned int getMatchesPlayed() const;
+	unsigned int getTotalWins() const;
     unsigned int getTotalPoints(unsigned int);
-    void printGoals();
+    void printGoals() const;
 	void printPlayers(std::vector<std::string>) const;
 	void addPlayer(std::vector<std::string>&,std::string);
 	void removePlayer(std::vector<std::string>&,std::string);
@@ -33,7 +33,8 @@ private:
 	unsigned int total_wins;
 	unsigned int total_points;
 	std::vector<std::string> players;
-	
+	const unsigned int points_per_win;
+
 
 };
 

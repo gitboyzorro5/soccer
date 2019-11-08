@@ -4,6 +4,9 @@
 #include "include/Team.h"
 
 Team::Team(unsigned int fthg,unsigned int ftag,unsigned int fthc,unsigned int ftac,unsigned int mp,unsigned int tw,unsigned int tp)
+
+:points_per_win(3)
+
 {
 
 	fthg = ftag = fthc = ftac = mp = tw  = tp = 0;
@@ -15,7 +18,7 @@ Team::Team(unsigned int fthg,unsigned int ftag,unsigned int fthc,unsigned int ft
 	matches_played = mp;
 	total_wins = tw;
 	total_points = tp;
-   
+
 }
 
 
@@ -71,23 +74,23 @@ if(itr != players.end())
 
 }
 
-std::string Team::getName()
+std::string Team::getName() const
 {
 	return name;
 }
 
-unsigned int Team::getMatchesPlayed()
+unsigned int Team::getMatchesPlayed() const
 {
 	return matches_played;
 }
 
-unsigned int Team::getTotalWins()
+unsigned int Team::getTotalWins() const
 {
 	return total_wins;
 }
 
 
-void Team::printGoals()
+void Team::printGoals() const
 {
  	std::cout << "Full Time Home Goals : " << full_time_home_goals <<std::endl;
  	std::cout << "Full Time Home Concede : " << full_time_home_concede <<std::endl;
@@ -99,7 +102,7 @@ void Team::printGoals()
 unsigned int Team::getTotalPoints(unsigned int tw)
 {
 	total_wins = tw;
-	total_points = tw * 3;
+	total_points = tw * points_per_win;
 
 	return total_points;
 }

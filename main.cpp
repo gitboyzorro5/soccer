@@ -7,18 +7,25 @@ using namespace std;
 int main()
 {
     //cout << "Hello world!" << endl;
-    Team ManUnited(0,0,0,0,0,0,0);
-    //ManUnited.printGoals();
-    std::vector<std::string> ManUnitedPlayers;
-    ManUnited.addPlayer(ManUnitedPlayers,"David Degea");
-    ManUnited.addPlayer(ManUnitedPlayers,"Luke Shaw");
-    ManUnited.addPlayer(ManUnitedPlayers,"Victor Lindeloff");
-    ManUnited.addPlayer(ManUnitedPlayers,"Harry Mcguire");
+    //Team ManUnited(0,0,0,0,0,0//ManUnited.printGoals();
+    std::vector<Team> eplteams;
+    Team Arsenal,Manunited,Mancity;
+    eplteams.push_back(Arsenal);
+    eplteams.push_back(Manunited);
+    eplteams.push_back(Mancity);
+    Arsenal.setName("Arsenal");
+    Mancity.setName("Manchester City");
+    Manunited.setName("Manchester United");
+    Arsenal.setGoals(10,450,5,2);
+    Mancity.setGoals(5,800,9,60);
+    Manunited.setGoals(12,80,34,40);
 
-    ManUnited.setGoals(10,5,5,12);
-    ManUnited.printGoals();
-    ManUnited.setTotalWins(5);
-    ManUnited.printTotalPoints()
-;
+    Arsenal.printGoals();
+    cout << std::endl;
+    Mancity.printGoals();
+    cout << std::endl;
+    Manunited.printGoals();
+
+
     return 0;
 }

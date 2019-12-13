@@ -7,7 +7,7 @@ class Team
 {
 
 public:
-	Team(unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int);
+	Team(unsigned int=0,unsigned int=0,unsigned int=0,unsigned int=0,unsigned int=0,unsigned int=0,unsigned int=0);
 	void setName(std::string);
 	void setGoals(unsigned int,unsigned int,unsigned int,unsigned int);
 	void setMatchesPlayed(unsigned int);

@@ -30,10 +30,10 @@ void Team::setName(std::string team_name)
 void Team::setGoals(unsigned int fthg,unsigned int ftag,unsigned int fthc,unsigned int ftac)
 {
 
-full_time_home_goals = fthg;
-full_time_away_goals = ftag;
-full_time_home_concede = fthc;
-full_time_away_concede = ftac;
+full_time_home_goals = (fthg >= 0 && fthg <= 40) ? fthg :0;
+full_time_away_goals = (ftag >= 0 && ftag <= 40) ? ftag :0;
+full_time_home_concede = (fthc >= 0 && fthc <= 40 ) ? fthc :0;
+full_time_away_concede = (ftac >= 0 && ftac <= 40) ? ftac :0;
 
 }
 
@@ -92,6 +92,8 @@ unsigned int Team::getTotalWins() const
 
 void Team::printGoals() const
 {
+    std::cout << "Team:" << getName() << std::endl;
+    //std::cout <<std::endl;
  	std::cout << "Full Time Home Goals : " << full_time_home_goals <<std::endl;
  	std::cout << "Full Time Home Concede : " << full_time_home_concede <<std::endl;
  	std::cout << "Full Time Away Goals : " << full_time_away_goals <<std::endl;
